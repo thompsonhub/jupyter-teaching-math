@@ -1,0 +1,86 @@
+* MBF3C
+
+This subtree will house all of the above courses jupyter files.
+
+** INTRO TO JUPYTER NOTEBOOKS
+
+*** What is a Jupyter Notebook?
+
+You can think of a Jupyter Notebook like a website that *runs code*. There is a lot to unpack from that statement. 
+
+You are probably wondering: "/What does 'runs code' even mean?/" or "/Why is Jupiter written like that? Are we talking about the planet?/"
+
+The answer is a bit complicated. In fact, it's easier to show you a Jupyter Notebook rather than explain what it is.
+
+*** So, what does a Jupyter Notebook look like?
+
+Just like this. What you are looking at, right now -- on your computer screen, is a Jupyter Notebook. The notebook is "/like a website/" because you've opened it in your web browser (probably Chrome or Safari). And, the notebook "/runs code/" using source code blocks like the one below. 
+
+*** What is a "Source Code Block"?
+
+For now, imagine that a source code block is a recipe, waiting to be cooked. In the same way that we bring a recipe into the kitchen, these source code blocks are brought into our Jupyter Notebook. This is where the magic happens.
+
+Remember when we asked: what is a Jupyter Notebook? Let's check the wikipedia page. 
+
+#+BEGIN_SRC ipython
+from IPython.display import IFrame
+IFrame('https://en.wikipedia.org/wiki/Project_Jupyter', width='100%', height=350)
+#+END_SRC
+
+#+RESULTS:
+:results:
+# Out [5]: 
+
+
+# text/html
+#+BEGIN_EXPORT html
+
+        <iframe
+            width="100%"
+            height="350"
+            src="https://en.wikipedia.org/wiki/Project_Jupyter"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+#+END_EXPORT
+:end:
+
+Maybe, you would prefer to watch a video instead:
+
+#+BEGIN_SRC ipython
+from IPython.display import YouTubeVideo
+YouTubeVideo('e52iCIJnFH8')
+#+END_SRC
+
+#+RESULTS:
+:results:
+# Out [15]: 
+:end:
+
+Maybe, you are bored already and want to listen to some soothing music?
+#+BEGIN_SRC ipython
+from IPython.display import Audio
+Audio(url="https://upload.wikimedia.org/wikipedia/en/d/de/Jazz%28We%27veGot%29.ogg")
+#+END_SRC
+
+#+RESULTS:
+:results:
+# Out [18]: 
+# text/plain
+: <IPython.lib.display.Audio object>
+
+# text/html
+#+BEGIN_EXPORT html
+
+                <audio  controls="controls" >
+                    <source src="https://upload.wikimedia.org/wikipedia/en/d/de/Jazz%28We%27veGot%29.ogg" type="audio/ogg" />
+                    Your browser does not support the audio element.
+                </audio>
+              
+#+END_EXPORT
+:end:
+
+
+
+
